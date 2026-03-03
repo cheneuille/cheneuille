@@ -4,11 +4,22 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Crown, Trophy, Coins, Flame } from "lucide-react";
 
+// Définition du type Player pour TypeScript
+type Player = {
+  uid: string;
+  username: string;
+  wagered?: number;
+  highestMultiplier?: {
+    multiplier: number;
+  };
+  randomAvatar?: string;
+};
+
 export default function CheneuilleUltimateCasino() {
-  const [players, setPlayers] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [topPlayer, setTopPlayer] = useState(null);
-  const [jackpotFlash, setJackpotFlash] = useState(false);
+  const [players, setPlayers] = useState<Player[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [topPlayer, setTopPlayer] = useState<Player | null>(null);
+  const [jackpotFlash, setJackpotFlash] = useState<boolean>(false);
   const prizePool = 250;
 
   // Liste des avatars — placer les fichiers dans public/avatars/
