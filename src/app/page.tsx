@@ -86,7 +86,7 @@ export default function CheneuilleUltimateCasino() {
             whileHover={{ scale: 1.08 }}
             className="text-5xl font-extrabold text-green-400 drop-shadow-[0_0_20px_#22c55e]"
           >
-            CHENEUILLE BLACKJACK
+           🃏 CHENEUILLE 🎰
           </motion.h1>
 
           <div className="flex gap-4">
