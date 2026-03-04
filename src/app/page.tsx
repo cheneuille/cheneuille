@@ -194,7 +194,7 @@ export default function CheneuilleUltimateCasino() {
         </section>
 
         <footer className="mt-24 text-center text-green-500">
-          © {new Date().getFullYear()} Cheneuille — Ultimate Casino Leaderboard
+          © {new Date().getFullYear()} Cheneuille — Leaderboards roobet - discord.gg/cheneuille
         </footer>
       </div>
 
